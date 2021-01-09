@@ -7,11 +7,4 @@
 6) Remember the name of the DB, remember your credentials with which you can log in to your db
 7) Change the db_user and db_pw entries in the secret.json and secret_dev.json files
 8) Create a new discord bot. Copy the secret, enter it under discord_secret
-9) Make sure to enter the channel ids for these parameters in the secret file 
-        "bot_owner_id" : [0],
-          "bot_owner_server": 0,
-          "bot_owner_info_channel": 0,
-          "bot_owner_messages_channel":0,
-          "bot_owner_images_channel":0,
-          "bot_owner_bot_join_leave": 0,
-        "dms_id": 0,
+9) Make sure to enter the channel ids for these parameters in the secret file (from bot_owner_id onward)
