@@ -1,7 +1,7 @@
 # How to work with this template:
 1) Make a virtual environment and install from requirements.txt using pip (pip install -r requirements.txt)
-2) Rename the db folder, to something reflecting your project. In this case: WikiBotdb or something
-3) change the INSTALLED_APPS, to reflect this name change (i.e. change db to the new folder name
+2) Rename the db folder, to something reflecting your project.
+3) change the INSTALLED_APPS, to reflect this name change (i.e. change db to the new folder name)
 4) copy the secret_template.json and name it secret.json. Copy it again, name it secret_dev.json
 5) Create a postgres database for said project
 6) Remember the name of the DB, remember your credentials with which you can log in to your db
