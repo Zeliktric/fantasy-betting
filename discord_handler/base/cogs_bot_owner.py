@@ -11,7 +11,7 @@ from texttable import Texttable
 from aiohttp.web import Request
 import logging
 
-from db.models import Error, UserIgnore, GuildStats
+from db.models import Error, GuildStats
 from discord_handler.base.cog_interface import AuthorState, ICog
 from discord_handler.helper import send_table, get_guild, get_user, send_pm
 
@@ -106,17 +106,6 @@ class BotOwner(ICog):
         table.set_cols_width([16, 10, 20, 15, 40])
         txt = "```" + table.draw() + "```"
         await send_table(ctx.send, txt)
-
-    @command(
-        name='ignore_user',
-        help='Ignores the user messages from this user'
-    )
-    async def ignore_user(self, ctx: Context, u_id: int):
-        if len(UserIgnore.objects.filter(user_id=u_id)) > 0:
-            await ctx.send(f"{u_id} is already ignored!")
-        else:
-            UserIgnore(user_id=u_id).save()
-            await ctx.send(f"Messages from {u_id} will be ignored.")
 
     async def send_error_notification(self, e: Error, guild: Guild):
         text = f":exclamation: An error occured on {guild.name} ({guild.id}): @here:exclamation: \n\n" \
