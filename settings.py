@@ -15,7 +15,7 @@ if sys.platform == "darwin":
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'intro',
+            'NAME': f"{d['db']}",
             'USER': f"{d['db_user']}",
             'PASSWORD': f"{d['db_pw']}",
             'HOST': 'localhost',
@@ -26,7 +26,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'intro',
+            'NAME': f"{d['db']}",
             'USER': f"{d['db_user']}",
             'PASSWORD': f"{d['db_pw']}",
             'HOST': 'localhost',
