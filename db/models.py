@@ -69,6 +69,7 @@ class DBUser(models.Model):
     u_name = models.CharField(max_length=64, verbose_name="Discord display name of the user", default="")
     g = models.ForeignKey(DBGuild, verbose_name="Associated server", on_delete=models.CASCADE)
     avatar_url = models.URLField(verbose_name="Avatar url of the account", default=None, null=True)
+    is_bot = models.BooleanField(default=False)
 
     class Meta:
         unique_together = (('u_id', 'g'))
