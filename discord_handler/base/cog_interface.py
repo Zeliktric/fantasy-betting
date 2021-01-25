@@ -115,8 +115,7 @@ class ICog(Cog):
                       , error_type=f'{type(error.original)}', error=f'{error}', traceback=traceback.format_exc())
             e.save()
             await self.notify_error_bot_owner(e, ctx)
-            await ctx.send(f'An error has occured. If this persists, please join https://discord.gg/d2F2PAn to get '
-                           f'support.')
+            await ctx.send(f'An error has occured. If this persists, please notify the bot owner.')
 
     async def cog_before_invoke(self, ctx: Context):
         add_guild(ctx)

@@ -147,7 +147,7 @@ class CustHelp(HelpCommand):
             return
 
         destination = self.get_destination()
-        e = Embed(title="`Intro Bot Help`", description=self.paginator.help_description)
+        e = Embed(title="`Bot Help`", description=self.paginator.help_description)
         options = None
         if command_only:
             page = self.paginator.entries[0]
