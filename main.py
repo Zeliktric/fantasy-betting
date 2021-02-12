@@ -39,7 +39,7 @@ def main(args=None):
         args = sys.argv[1:]
     parser = get_parser()
     args = parser.parse_args(args)
-    intents = discord.Intents(messages=True, guilds=True)
+    intents = discord.Intents(messages=True, guilds=True, reactions=True, members=True)
     """
     #use these if necessary
     intents.reactions = True
@@ -49,6 +49,11 @@ def main(args=None):
     """
     bot = Bot(command_prefix=get_pre,help_command=CustHelp(show=True),intents=intents)
     path = os.path.dirname(os.path.realpath(__file__)) + "/"
+    
+    @bot.event
+    async def on_ready():
+        await bot.change_presence(activity=discord.Game(name="Who are you betting on?"))
+        print("I'm in")
 
     @bot.event
     async def on_error(event, *args, **kwargs):
@@ -69,7 +74,7 @@ def main(args=None):
         await bot_owner.send_error_notification(e, g_obj)
 
 
-    if sys.platform == "darwin":
+    if sys.platform == "win32":
         with open(os.path.join(path,'secret_dev.json'),'r') as f:
             d = json.load(f)
     else:
@@ -82,7 +87,7 @@ def main(args=None):
         'discord_handler.cogs.cog_listener',
         'discord_handler.cogs.cog_mod',
         'discord_handler.cogs.cog_owner',
-        'discord_handler.cogs.cog_setup',
+        'discord_handler.cogs.cog_game'
     ]))
     bot.run(d['discord_secret'])
 

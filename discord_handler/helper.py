@@ -259,6 +259,7 @@ async def choose_option(ctx: Context, text: str, options: List[object], check_fu
         reaction, _ = await ctx.bot.wait_for('reaction_add', check=check,
                                              timeout=120)
     except asyncio.TimeoutError as e:
+        print(e)
         await ctx.send("Sorry you timed out.")
         raise e
     finally:
@@ -313,8 +314,8 @@ async def yes_no(text: str, ctx: Context, skip=False, embed: Embed = None, timeo
     else:
         msg = await ctx.send(text, embed=embed)
     await msg.add_reaction('✅')
-    await msg.add_reaction('❌')
-    em_list = ['✅', '❌']
+    await msg.add_reaction('❎')
+    em_list = ['✅', '❎']
     if skip:
         await msg.add_reaction('⏩')
         em_list.append('⏩')
@@ -339,7 +340,7 @@ async def yes_no(text: str, ctx: Context, skip=False, embed: Embed = None, timeo
     if reaction.emoji == '⏩':
         return None
 
-    if reaction.emoji == '❌':
+    if reaction.emoji == '❎':
         if say_cancelled:
             await ctx.send("Cancelled.")
         return False

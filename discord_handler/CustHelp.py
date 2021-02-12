@@ -1,6 +1,7 @@
 import asyncio
 
 from discord import Embed, Message, Reaction, Member, NotFound
+import discord
 from discord.ext.commands import HelpCommand, Command, Cog, Bot
 from typing import Union, List
 
@@ -147,7 +148,7 @@ class CustHelp(HelpCommand):
             return
 
         destination = self.get_destination()
-        e = Embed(title="`Bot Help`", description=self.paginator.help_description)
+        e = Embed(title="`Fantasy Betting Bot Help`", description=self.paginator.help_description, colour=discord.Colour.green())
         options = None
         if command_only:
             page = self.paginator.entries[0]
@@ -231,24 +232,23 @@ class CustHelp(HelpCommand):
         cogs = list(set(cogs))
         self.add_indented_commands(cogs)
 
-        self.paginator.help_description = "Below you can see all available categories you have access to\n"
-        "Check out https://mamubots.net/ for our dashboard."
+        self.paginator.help_description = "Below you can see all available categories you have access to"
 
         await self.send_pages(bot)
 
     async def send_command_help(self, command):
-        help_description = f"`{self.clean_prefix}{command.qualified_name}`\n\nCheck out https://mamubots.net/ for our dashboard."
+        help_description = f"`{self.clean_prefix}{command.qualified_name}`"
         self.paginator.help_description = help_description
         self.paginator.add_command(command)
         await self.send_pages(None, True)
 
     async def send_cog_help(self, cog):
         if cog.description:
-            help_description = f"{cog.description}\n\nCheck out https://mamubots.net/ for our dashboard.\n\n" \
+            help_description = f"{cog.description}\n\n" \
                                f"Available commands:"
             self.paginator.help_description = help_description
         else:
-            self.paginator.help_description = "Check out https://mamubots.net/ for our dashboard.\n\n" \
+            self.paginator.help_description = "" \
                                               f"Available commands:"
 
         filtered = await self.filter_commands(cog.get_commands(), sort=self.sort_commands)

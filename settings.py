@@ -4,14 +4,14 @@ import json
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-if sys.platform == "darwin":
+if sys.platform == "win32":
     with open(os.path.join(BASE_DIR,'secret_dev.json'),'r') as f:
         d = json.load(f)
 else:
     with open(os.path.join(BASE_DIR,'secret.json'),'r') as f:
         d = json.load(f)
 
-if sys.platform == "darwin":
+if sys.platform == "win32":
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',

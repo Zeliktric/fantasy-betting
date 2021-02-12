@@ -9,7 +9,7 @@ path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'pl
 
 class DBotOwner(BotOwner):
     """
-    Bot owner commands. Debugging functions. Only to be used by MAMU.
+    Bot owner commands. Debugging functions. Only to be used by Zeliktric.
     """
 
     def __init__(self, bot: Bot, d: dict, extension_list=[]):
@@ -43,3 +43,4 @@ class DBotOwner(BotOwner):
             except ExtensionNotLoaded:
                 await ctx.send(f"**Can't load {i}**")
         await ctx.send("Done")
+

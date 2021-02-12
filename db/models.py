@@ -20,6 +20,9 @@ class DBGuild(models.Model):
     name = models.CharField(max_length=256, verbose_name="Discord name of the server")
     time_stamp = models.DateTimeField(verbose_name="Date of adding the guild", default=timezone.now)
     prefix = models.CharField(max_length=512, verbose_name="Prefix for guild", default="!")
+    cnnid = models.BigIntegerField(verbose_name="Channel ID", default=0)
+    msgid = models.BigIntegerField(verbose_name="Message ID", default=0)
+    rolid = models.BigIntegerField(verbose_name="Role ID", default=0)
 
     def __repr__(self):
         return f"{self.g_id}:{self.name}"
@@ -70,12 +73,36 @@ class DBUser(models.Model):
     g = models.ForeignKey(DBGuild, verbose_name="Associated server", on_delete=models.CASCADE)
     avatar_url = models.URLField(verbose_name="Avatar url of the account", default=None, null=True)
     is_bot = models.BooleanField(default=False)
+    g_admin = models.BooleanField(verbose_name="Admin flag, set by Admin", default=False)
+    g_mod = models.BooleanField(verbose_name="Mod flag, set by Admin", default=False) 
+    u_bal = models.BigIntegerField(verbose_name="FB balance of the user", default=100)
+    upl = models.BigIntegerField(verbose_name="Profit/Loss of user", default=0)
+    sbs = models.BigIntegerField(verbose_name="Successful bids of user", default=0)
+    ubs = models.BigIntegerField(verbose_name="Unsuccessful bids of user", default=0)
 
     class Meta:
         unique_together = (('u_id', 'g'))
 
     def __repr__(self):
         return f"{self.u_name}({self.u_id})"
+
+    def __str__(self):
+        return self.__repr__()
+
+class BetHistory(models.Model):
+    u_id = models.BigIntegerField(verbose_name="Discord id of the user")
+    amount = models.IntegerField(verbose_name="Amount of money that was betted", default=0)
+    team = models.CharField(max_length=100, verbose_name="Team name", default=None)
+    profit = models.IntegerField(verbose_name="Amount of profit/loss recieved", default=0)
+    odds = models.CharField(max_length=10, verbose_name="Odds for the bet", default=None)
+    code = models.CharField(max_length=5, verbose_name="League code of bet", default=None)
+    timestamp = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = (('u_id', 'amount', 'team', 'profit', 'odds', 'timestamp', 'code'))
+
+    def __repr__(self):
+        return f"{self.timestamp}"
 
     def __str__(self):
         return self.__repr__()

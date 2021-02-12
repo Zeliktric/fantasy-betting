@@ -1,0 +1,509 @@
+{
+    "count": 10,
+    "filters": {
+        "matchday": "24"
+    },
+    "competition": {
+        "id": 2021,
+        "area": {
+            "id": 2072,
+            "name": "England"
+        },
+        "name": "Premier League",
+        "code": "PL",
+        "plan": "TIER_ONE",
+        "lastUpdated": "2021-02-09T02:00:09Z"
+    },
+    "matches": [
+        {
+            "id": 303992,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-13T12:30:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-20T19:35:31Z",
+            "odds": {
+                "homeWin": 3.3,
+                "draw": 3.69,
+                "awayWin": 2.09
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 338,
+                "name": "Leicester City FC"
+            },
+            "awayTeam": {
+                "id": 64,
+                "name": "Liverpool FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303995,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-13T15:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2020-10-02T19:35:38Z",
+            "odds": {
+                "homeWin": 2.27,
+                "draw": 3.24,
+                "awayWin": 3.25
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 354,
+                "name": "Crystal Palace FC"
+            },
+            "awayTeam": {
+                "id": 328,
+                "name": "Burnley FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303987,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-13T17:30:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-20T19:35:32Z",
+            "odds": {
+                "homeWin": 1.37,
+                "draw": 5.11,
+                "awayWin": 7.85
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 65,
+                "name": "Manchester City FC"
+            },
+            "awayTeam": {
+                "id": 73,
+                "name": "Tottenham Hotspur FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303996,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-13T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-29T19:35:40Z",
+            "odds": {
+                "homeWin": 2.62,
+                "draw": 3.34,
+                "awayWin": 2.69
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 397,
+                "name": "Brighton & Hove Albion FC"
+            },
+            "awayTeam": {
+                "id": 58,
+                "name": "Aston Villa FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303994,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-14T12:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-29T19:35:40Z",
+            "odds": {
+                "homeWin": 2.4,
+                "draw": 3.24,
+                "awayWin": 3.04
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 340,
+                "name": "Southampton FC"
+            },
+            "awayTeam": {
+                "id": 76,
+                "name": "Wolverhampton Wanderers FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303991,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-14T14:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-29T19:35:40Z",
+            "odds": {
+                "homeWin": 8.94,
+                "draw": 5.32,
+                "awayWin": 1.32
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 74,
+                "name": "West Bromwich Albion FC"
+            },
+            "awayTeam": {
+                "id": 66,
+                "name": "Manchester United FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303988,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-14T16:30:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-20T19:35:32Z",
+            "odds": {
+                "homeWin": 1.76,
+                "draw": 3.93,
+                "awayWin": 4.32
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 57,
+                "name": "Arsenal FC"
+            },
+            "awayTeam": {
+                "id": 341,
+                "name": "Leeds United FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303990,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-14T19:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-29T19:35:40Z",
+            "odds": {
+                "homeWin": 1.75,
+                "draw": 3.77,
+                "awayWin": 4.59
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 62,
+                "name": "Everton FC"
+            },
+            "awayTeam": {
+                "id": 63,
+                "name": "Fulham FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303993,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-15T18:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-29T19:35:40Z",
+            "odds": {
+                "homeWin": 1.75,
+                "draw": 3.78,
+                "awayWin": 5.08
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 563,
+                "name": "West Ham United FC"
+            },
+            "awayTeam": {
+                "id": 356,
+                "name": "Sheffield United FC"
+            },
+            "referees": []
+        },
+        {
+            "id": 303989,
+            "season": {
+                "id": 619,
+                "startDate": "2020-09-12",
+                "endDate": "2021-05-23",
+                "currentMatchday": 24
+            },
+            "utcDate": "2021-02-15T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-01-20T19:35:32Z",
+            "odds": {
+                "homeWin": 1.24,
+                "draw": 6.01,
+                "awayWin": 11.9
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 61,
+                "name": "Chelsea FC"
+            },
+            "awayTeam": {
+                "id": 67,
+                "name": "Newcastle United FC"
+            },
+            "referees": []
+        }
+    ]
+}
