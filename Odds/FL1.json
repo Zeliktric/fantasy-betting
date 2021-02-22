@@ -1,0 +1,211 @@
+[
+    {
+        "time": "2021-02-24T18:00:00Z",
+        "home_team": "N\u00eemes Olympique",
+        "away_team": "Lorient",
+        "full_time_result": {
+            "1": 2700,
+            "X": 3500,
+            "2": 2520
+        },
+        "both_teams_to_score": {
+            "yes": 1710,
+            "no": 2080
+        },
+        "double_chance": {
+            "1X": 1520,
+            "12": 1300,
+            "2X": 1470
+        }
+    },
+    {
+        "time": "2021-02-26T20:00:00Z",
+        "home_team": "Rennes",
+        "away_team": "Nice",
+        "full_time_result": {
+            "1": 1900,
+            "X": 3250,
+            "2": 4550
+        },
+        "both_teams_to_score": {
+            "yes": 1800,
+            "no": 1960
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1340,
+            "2X": 1900
+        }
+    },
+    {
+        "time": "2021-02-27T12:00:00Z",
+        "home_team": "Bordeaux",
+        "away_team": "Metz",
+        "full_time_result": {
+            "1": 2200,
+            "X": 3150,
+            "2": 3600
+        },
+        "both_teams_to_score": {
+            "yes": 1980,
+            "no": 1780
+        },
+        "double_chance": {
+            "1X": 1290,
+            "12": 1360,
+            "2X": 1680
+        }
+    },
+    {
+        "time": "2021-02-27T16:00:00Z",
+        "home_team": "Dijon",
+        "away_team": "Paris SG",
+        "full_time_result": {
+            "1": 15000,
+            "X": 7250,
+            "2": 1180
+        },
+        "both_teams_to_score": {
+            "yes": 1920,
+            "no": 1840
+        },
+        "double_chance": {
+            "1X": 4900,
+            "12": 1090,
+            "2X": 1010
+        }
+    },
+    {
+        "time": "2021-02-28T12:00:00Z",
+        "home_team": "Monaco",
+        "away_team": "Brest",
+        "full_time_result": {
+            "1": 1470,
+            "X": 4800,
+            "2": 6100
+        },
+        "both_teams_to_score": {
+            "yes": 1680,
+            "no": 2100
+        },
+        "double_chance": {
+            "1X": 1130,
+            "12": 1180,
+            "2X": 2700
+        }
+    },
+    {
+        "time": "2021-02-28T14:00:00Z",
+        "home_team": "Reims",
+        "away_team": "Montpellier",
+        "full_time_result": {
+            "1": 2800,
+            "X": 2900,
+            "2": 2850
+        },
+        "both_teams_to_score": {
+            "yes": 1720,
+            "no": 2060
+        },
+        "double_chance": {
+            "1X": 1420,
+            "12": 1410,
+            "2X": 1440
+        }
+    },
+    {
+        "time": "2021-02-28T14:00:00Z",
+        "home_team": "Angers",
+        "away_team": "Lens",
+        "full_time_result": {
+            "1": 2800,
+            "X": 3000,
+            "2": 2750
+        },
+        "both_teams_to_score": {
+            "yes": 1960,
+            "no": 1800
+        },
+        "double_chance": {
+            "1X": 1450,
+            "12": 1380,
+            "2X": 1440
+        }
+    },
+    {
+        "time": "2021-02-28T14:00:00Z",
+        "home_team": "N\u00eemes Olympique",
+        "away_team": "Nantes",
+        "full_time_result": {
+            "1": 2850,
+            "X": 3350,
+            "2": 2480
+        },
+        "both_teams_to_score": {
+            "yes": 1750,
+            "no": 2020
+        },
+        "double_chance": {
+            "1X": 1540,
+            "12": 1330,
+            "2X": 1430
+        }
+    },
+    {
+        "time": "2021-02-28T14:00:00Z",
+        "home_team": "Lorient",
+        "away_team": "Saint-\u00c9tienne",
+        "full_time_result": {
+            "1": 2950,
+            "X": 3200,
+            "2": 2500
+        },
+        "both_teams_to_score": {
+            "yes": 1750,
+            "no": 2020
+        },
+        "double_chance": {
+            "1X": 1530,
+            "12": 1350,
+            "2X": 1400
+        }
+    },
+    {
+        "time": "2021-02-28T16:00:00Z",
+        "home_team": "Lille",
+        "away_team": "Strasbourg",
+        "full_time_result": {
+            "1": 1800,
+            "X": 3650,
+            "2": 4500
+        },
+        "both_teams_to_score": {
+            "yes": 2080,
+            "no": 1700
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1280,
+            "2X": 2000
+        }
+    },
+    {
+        "time": "2021-02-28T20:00:00Z",
+        "home_team": "Marseille",
+        "away_team": "Lyon",
+        "full_time_result": {
+            "1": 4250,
+            "X": 3650,
+            "2": 1850
+        },
+        "both_teams_to_score": {
+            "yes": 1660,
+            "no": 2150
+        },
+        "double_chance": {
+            "1X": 1960,
+            "12": 1290,
+            "2X": 1220
+        }
+    }
+]

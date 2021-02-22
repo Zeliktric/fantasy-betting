@@ -57,11 +57,11 @@ class Mod(ICog):
                 betodds = thedata[3]
                 user = await self.bot.fetch_user(int(x))
                 o = f"""
-        **{user}'s bet**
-        Amount bet: `{betamount}`
-        Team bet on: `{betteam}`
-        Potential profit: `{betwins}`
-        Betting odds: `1/{betodds}`
+**{user}'s bet**
+Amount bet: `{betamount}`
+Team bet on: `{betteam}`
+Potential profit: `{betwins}`
+Betting odds: `1/{betodds}`
                 """
                 u.append(o)
         uu = "".join(u)

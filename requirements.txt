@@ -9,3 +9,4 @@ psycopg2-binary
 psycopg2
 fuzzywuzzy
 inflect
+soccerapi

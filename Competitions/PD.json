@@ -1,509 +1,489 @@
 {
     "count": 10,
     "filters": {
-      "matchday": "23"
+        "matchday": "24"
     },
     "competition": {
-      "id": 2014,
-      "area": {
-        "id": 2224,
-        "name": "Spain"
-      },
-      "name": "Primera Division",
-      "code": "PD",
-      "plan": "TIER_ONE",
-      "lastUpdated": "2021-02-09T02:10:10Z"
+        "id": 2014,
+        "area": {
+            "id": 2224,
+            "name": "Spain"
+        },
+        "name": "Primera Division",
+        "code": "PD",
+        "plan": "TIER_ONE",
+        "lastUpdated": "2021-02-16T02:25:02Z"
     },
     "matches": [
-      {
-        "id": 308551,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
+        {
+            "id": 308561,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-19T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:56Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 90,
+                "name": "Real Betis Balompi\u00e9"
+            },
+            "awayTeam": {
+                "id": 82,
+                "name": "Getafe CF"
+            },
+            "referees": []
         },
-        "utcDate": "2021-02-12T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-05T15:33:08Z",
-        "odds": {
-          "homeWin": 1.53,
-          "draw": 3.79,
-          "awayWin": 6.85
+        {
+            "id": 308563,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-20T13:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:56Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 285,
+                "name": "Elche CF"
+            },
+            "awayTeam": {
+                "id": 278,
+                "name": "SD Eibar"
+            },
+            "referees": []
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        {
+            "id": 308557,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-20T15:15:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:56Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 78,
+                "name": "Club Atl\u00e9tico de Madrid"
+            },
+            "awayTeam": {
+                "id": 88,
+                "name": "Levante UD"
+            },
+            "referees": []
         },
-        "homeTeam": {
-          "id": 558,
-          "name": "RC Celta de Vigo"
+        {
+            "id": 308556,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-20T17:30:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:56Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 95,
+                "name": "Valencia CF"
+            },
+            "awayTeam": {
+                "id": 558,
+                "name": "RC Celta de Vigo"
+            },
+            "referees": []
         },
-        "awayTeam": {
-          "id": 285,
-          "name": "Elche CF"
+        {
+            "id": 308562,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-20T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:56Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 250,
+                "name": "Real Valladolid CF"
+            },
+            "awayTeam": {
+                "id": 86,
+                "name": "Real Madrid CF"
+            },
+            "referees": []
         },
-        "referees": []
-      },
-      {
-        "id": 308550,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
+        {
+            "id": 308555,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-21T13:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:57Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 81,
+                "name": "FC Barcelona"
+            },
+            "awayTeam": {
+                "id": 264,
+                "name": "C\u00e1diz CF"
+            },
+            "referees": []
         },
-        "utcDate": "2021-02-13T13:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 5.11,
-          "draw": 3.41,
-          "awayWin": 1.74
+        {
+            "id": 308560,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-21T15:15:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:57Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 92,
+                "name": "Real Sociedad de F\u00fatbol"
+            },
+            "awayTeam": {
+                "id": 263,
+                "name": "Deportivo Alav\u00e9s"
+            },
+            "referees": []
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        {
+            "id": 308564,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-21T17:30:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:57Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 299,
+                "name": "SD Huesca"
+            },
+            "awayTeam": {
+                "id": 83,
+                "name": "Granada CF"
+            },
+            "referees": []
         },
-        "homeTeam": {
-          "id": 83,
-          "name": "Granada CF"
+        {
+            "id": 308559,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-21T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:57Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 77,
+                "name": "Athletic Club"
+            },
+            "awayTeam": {
+                "id": 94,
+                "name": "Villarreal CF"
+            },
+            "referees": []
         },
-        "awayTeam": {
-          "id": 78,
-          "name": "Club Atl\u00e9tico de Madrid"
-        },
-        "referees": []
-      },
-      {
-        "id": 308548,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-13T15:15:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 1.46,
-          "draw": 4.14,
-          "awayWin": 7.34
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 559,
-          "name": "Sevilla FC"
-        },
-        "awayTeam": {
-          "id": 299,
-          "name": "SD Huesca"
-        },
-        "referees": []
-      },
-      {
-        "id": 308554,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-13T17:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-05T15:33:08Z",
-        "odds": {
-          "homeWin": 2.1,
-          "draw": 3.14,
-          "awayWin": 3.69
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 278,
-          "name": "SD Eibar"
-        },
-        "awayTeam": {
-          "id": 250,
-          "name": "Real Valladolid CF"
-        },
-        "referees": []
-      },
-      {
-        "id": 308546,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-13T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 1.24,
-          "draw": 6.04,
-          "awayWin": 10.93
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 81,
-          "name": "FC Barcelona"
-        },
-        "awayTeam": {
-          "id": 263,
-          "name": "Deportivo Alav\u00e9s"
-        },
-        "referees": []
-      },
-      {
-        "id": 308549,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-14T13:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 3.19,
-          "draw": 3.01,
-          "awayWin": 2.39
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 82,
-          "name": "Getafe CF"
-        },
-        "awayTeam": {
-          "id": 92,
-          "name": "Real Sociedad de F\u00fatbol"
-        },
-        "referees": []
-      },
-      {
-        "id": 308545,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-14T15:15:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 1.37,
-          "draw": 4.84,
-          "awayWin": 7.97
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 86,
-          "name": "Real Madrid CF"
-        },
-        "awayTeam": {
-          "id": 95,
-          "name": "Valencia CF"
-        },
-        "referees": []
-      },
-      {
-        "id": 308547,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-14T17:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-05T15:33:08Z",
-        "odds": {
-          "homeWin": 2.29,
-          "draw": 3.1,
-          "awayWin": 3.33
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 88,
-          "name": "Levante UD"
-        },
-        "awayTeam": {
-          "id": 79,
-          "name": "CA Osasuna"
-        },
-        "referees": []
-      },
-      {
-        "id": 308552,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-14T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 1.83,
-          "draw": 3.45,
-          "awayWin": 4.44
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 94,
-          "name": "Villarreal CF"
-        },
-        "awayTeam": {
-          "id": 90,
-          "name": "Real Betis Balompi\u00e9"
-        },
-        "referees": []
-      },
-      {
-        "id": 308553,
-        "season": {
-          "id": 635,
-          "startDate": "2020-09-13",
-          "endDate": "2021-05-23",
-          "currentMatchday": 22
-        },
-        "utcDate": "2021-02-15T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 23,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-28T19:33:16Z",
-        "odds": {
-          "homeWin": 3.49,
-          "draw": 2.97,
-          "awayWin": 2.28
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 264,
-          "name": "C\u00e1diz CF"
-        },
-        "awayTeam": {
-          "id": 77,
-          "name": "Athletic Club"
-        },
-        "referees": []
-      }
+        {
+            "id": 308558,
+            "season": {
+                "id": 635,
+                "startDate": "2020-09-13",
+                "endDate": "2021-05-23",
+                "currentMatchday": 23
+            },
+            "utcDate": "2021-02-22T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 24,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-01T19:32:57Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 79,
+                "name": "CA Osasuna"
+            },
+            "awayTeam": {
+                "id": 559,
+                "name": "Sevilla FC"
+            },
+            "referees": []
+        }
     ]
-  }
+}

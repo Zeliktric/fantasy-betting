@@ -56,6 +56,14 @@ def main(args=None):
         print("I'm in")
 
     @bot.event
+    async def on_command_error(ctx, error):
+        if ctx.author.id == bot.user.id:
+            return
+        if "You are on cooldown." not in str(error):
+            return
+        return await ctx.send(error)
+
+    @bot.event
     async def on_error(event, *args, **kwargs):
         try:
             g_obj = args[0].guild

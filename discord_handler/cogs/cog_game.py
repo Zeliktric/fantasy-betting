@@ -1,4 +1,5 @@
 from discord.ext.commands import Bot, command, Context
+from discord.ext import commands
 
 from discord_handler.base.cog_interface import ICog, AuthorState
 from db.models import DBUser, BetHistory
@@ -15,6 +16,8 @@ import sys
 from django.utils import timezone
 
 from discord_handler.helper import choose_option, get_response, yes_no, CustCtx
+
+from soccerapi.api import ApiUnibet
 
 async def sys_out(out_data):
   if sys.version_info >= (3,):
@@ -50,6 +53,13 @@ class Game(ICog):
           if b <= t:
             pass
           else:
+            gw = (response["filters"]["matchday"])
+            connection = http.client.HTTPConnection('api.football-data.org')
+            headers = { 'X-Auth-Token': '41d2d4c794c94335a714092965523d5c' }
+            connection.request('GET', f'/v2/competitions/{code}/matches?matchday={gw}', None, headers )
+            response = json.loads(connection.getresponse().read().decode())
+            with open(f"Competitions/{code}.json", "w") as f:
+              json.dump(response, f, indent=4)
             with open(f"Bets/{code}.json", "r") as f:
               data = json.load(f)
             
@@ -78,6 +88,9 @@ class Game(ICog):
                   elif at in betwho:
                     pb = "AWAY_TEAM"
                   break
+              hs = data["matches"][r]["score"]["fullTime"]["homeTeam"]
+              aws = data["matches"][r]["score"]["fullTime"]["awayTeam"]
+              score = f"{hs} - {aws}"
               user = await bot.fetch_user(userid)
               obj = DBUser.objects.get(g_id=783384319711379456, u_id=user.id)
               field_object = DBUser._meta.get_field("u_bal")
@@ -116,6 +129,7 @@ class Game(ICog):
                 u_id=user.id,
                 amount=betamount,
                 team=betwho,
+                score=score,
                 profit=profit,
                 odds=betodd,
                 code=code,
@@ -135,6 +149,18 @@ class Game(ICog):
             response = json.loads(connection.getresponse().read().decode())
             with open(f"Competitions/{code}.json", "w") as f:
               json.dump(response, f, indent=4)
+            api = ApiUnibet()
+            urls = {
+              "SA": "https://www.unibet.com/betting/sports/filter/football/italy/serie_a/matches",
+              "PL": "https://www.unibet.com/betting/sports/filter/football/england/premier_league/matches",
+              "BL1": "https://www.unibet.com/betting/sports/filter/football/germany/bundesliga/matches",
+              "FL1": "https://www.unibet.com/betting/sports/filter/football/france/ligue_1/matches",
+              "PD": "https://www.unibet.com/betting/sports/filter/football/spain/la_liga/matches"
+              }
+            url = urls.get(code.upper())
+            odds = api.odds(url)
+            with open(f"Odds/{code}.json", "w") as f:
+              json.dump(odds, f, indent=4)
             channel = bot.get_channel(808769018546094103)
             await channel.send(f"Updated {code} | {datetime.utcnow()}")
         await s(60)
@@ -383,6 +409,11 @@ Athletic Club
       brief="Bet on a fixture!",
       help="Use this command to bet on a fixture of your choice!"
     )
+    @commands.cooldown(
+      1,
+      300,
+      commands.BucketType.user
+    )
     async def bet(self, ctx: Context):
       await ctx.send("Lets bet in DMs!")
       channel = await CustCtx.from_member_dm(ctx.message.author, self.bot)
@@ -395,25 +426,36 @@ Athletic Club
       with open(f"Competitions/{code.upper()}.json", "r") as f:
         response = json.load(f)
 
+
       m = []
       for r in range(10):
         try:
-          winner = response["matches"][r]["score"]["winner"]
-          y = response["matches"][r]["score"]["fullTime"]
-          homes = y["homeTeam"]
-          aways = y["awayTeam"]
-          e = response["matches"][r]["homeTeam"]
-          hteam = e["name"]
-          o = response["matches"][r]["awayTeam"]
-          ateam = o["name"]
-          if r == 9:
-            u = (response["matches"][r]["utcDate"])
+          u = (response["matches"][r]["utcDate"])
+          d = datetime.fromisoformat(f'{u}'[:-1])
+          e = datetime.now()
+          b = timedelta(seconds=0)
+          t = d-e
+          if b >= t:
+            continue
+          else:
+            winner = response["matches"][r]["score"]["winner"]
+            y = response["matches"][r]["score"]["fullTime"]
+            homes = y["homeTeam"]
+            aways = y["awayTeam"]
+            e = response["matches"][r]["homeTeam"]
+            hteam = e["name"]
+            o = response["matches"][r]["awayTeam"]
+            ateam = o["name"]
+            if r == 9:
+              u = (response["matches"][r]["utcDate"])
 
-          m.append(f"{hteam} VS {ateam}\n")
+            m.append(f"{hteam} VS {ateam}\n")
         except:
           pass
       gw = (response["filters"]["matchday"])
 
+      if m == []:
+        return await channel.send(f"All the league games in {league} for this gameweek have all finished or have started. Wait until the last game has finished!")
       team = await choose_option(channel, f"**Which fixture are you betting on in the {league}?**", m)
 
       fi = False
@@ -439,9 +481,14 @@ Athletic Club
           pass
       if fi == False:
         return await channel.send(f"I could not find a team in the `{league}` with the team name of `{team}`!")
-      hwin = (response["matches"][r]["odds"]["homeWin"])
-      awin = (response["matches"][r]["odds"]["awayWin"])
-      draw = (response["matches"][r]["odds"]["draw"])
+
+      with open(f"Odds/{code}.json", "r") as f:
+        odds = json.load(f)
+
+      hwin = round(odds[r]["full_time_result"]["1"]/1000, 2)
+      draw = round(odds[r]["full_time_result"]["X"]/1000, 2)
+      awin = round(odds[r]["full_time_result"]["2"]/1000, 2)
+      
       lstt = [f"Home Win `1/{hwin}` ({hteam} wins)", f"󠁁󠁁Away Win `1/{awin}` ({ateam} wins)", f"Draw `1/{draw}` (no one wins)\n?"]
       choice = await choose_option(channel, f"**Are you betting on a:**", lstt)
       if "Home" in choice:
@@ -749,9 +796,12 @@ Betting odds: `1/{betodds}`
           pass
       if fi == False:
         return await ctx.send(f"I could not find a team in the `{code}` with the team name of `{team}`!")
-      hwin = (response["matches"][r]["odds"]["homeWin"])
-      awin = (response["matches"][r]["odds"]["awayWin"])
-      draw = (response["matches"][r]["odds"]["draw"])
+      with open(f"Odds/{code}.json", "r") as f:
+        odds = json.load(f)
+
+      hwin = round(odds[r]["full_time_result"]["1"]/1000, 2)
+      draw = round(odds[r]["full_time_result"]["X"]/1000, 2)
+      awin = round(odds[r]["full_time_result"]["2"]/1000, 2)
       e = f"""
       __**Teams**__
 **{hteam} VS {ateam}**
@@ -861,7 +911,10 @@ SA | Serie A
       if str(obj) == "<QuerySet []>":
         return await ctx.send(f"{ctx.message.author.mention}\nYou don't have any bet history!")
       if time_stamp == None:
-        ts = obj[0]
+        ts = []
+        for each in obj:
+          ts.append(f"{each}")
+        ts = "\n".join(ts)
         embed = discord.Embed(
           title = "Bet History Timestamps",
           description = str(ts),
@@ -887,6 +940,8 @@ SA | Serie A
       odds = fo.value_from_object(obj)
       fo = BetHistory._meta.get_field("code")
       code = fo.value_from_object(obj)
+      fo = BetHistory._meta.get_field("score")
+      score = fo.value_from_object(obj)
       n = {"BL1": "Bundesliga", "FL1": "France Ligue 1", "PD": "La Liga", "PL": "Premier League", "SA": "Serie A"}
       name = n.get(code.upper())
       if int(profit) < 0:
@@ -899,6 +954,7 @@ Amount bet: `{amount}`
 Team bet on: `{team}`
 {wins}: `{profit}`
 Betting odds: `1/{odds}`
+Final Score: `{score}`
       """
       embed = discord.Embed(
         title = f"Bet on {ts}",

@@ -1,0 +1,344 @@
+[
+    {
+        "time": "2021-02-26T19:30:00Z",
+        "home_team": "Werder Bremen",
+        "away_team": "Eintracht Frankfurt",
+        "full_time_result": {
+            "1": 4300,
+            "X": 3850,
+            "2": 1780
+        },
+        "both_teams_to_score": {
+            "yes": 1650,
+            "no": 2180
+        },
+        "double_chance": {
+            "1X": 2060,
+            "12": 1270,
+            "2X": 1230
+        }
+    },
+    {
+        "time": "2021-02-27T14:30:00Z",
+        "home_team": "Borussia Dortmund",
+        "away_team": "Arminia Bielefeld",
+        "full_time_result": {
+            "1": 1170,
+            "X": 7000,
+            "2": 17000
+        },
+        "both_teams_to_score": {
+            "yes": 2050,
+            "no": 1730
+        },
+        "double_chance": {
+            "1X": 1020,
+            "12": 1100,
+            "2X": 5200
+        }
+    },
+    {
+        "time": "2021-02-27T14:30:00Z",
+        "home_team": "VfL Wolfsburg",
+        "away_team": "Hertha BSC",
+        "full_time_result": {
+            "1": 1700,
+            "X": 3950,
+            "2": 4700
+        },
+        "both_teams_to_score": {
+            "yes": 1680,
+            "no": 2120
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1260,
+            "2X": 2180
+        }
+    },
+    {
+        "time": "2021-02-27T14:30:00Z",
+        "home_team": "Bayern Munich",
+        "away_team": "1. FC K\u00f6ln",
+        "full_time_result": {
+            "1": 1180,
+            "X": 7500,
+            "2": 14000
+        },
+        "both_teams_to_score": {
+            "yes": 1750,
+            "no": 2020
+        },
+        "double_chance": {
+            "1X": 1030,
+            "12": 1100,
+            "2X": 5100
+        }
+    },
+    {
+        "time": "2021-02-27T14:30:00Z",
+        "home_team": "VfB Stuttgart",
+        "away_team": "FC Schalke 04",
+        "full_time_result": {
+            "1": 1490,
+            "X": 4500,
+            "2": 6400
+        },
+        "both_teams_to_score": {
+            "yes": 1680,
+            "no": 2140
+        },
+        "double_chance": {
+            "1X": 1130,
+            "12": 1220,
+            "2X": 2650
+        }
+    },
+    {
+        "time": "2021-02-27T17:30:00Z",
+        "home_team": "RB Leipzig",
+        "away_team": "Borussia M\u00f6nchengladbach",
+        "full_time_result": {
+            "1": 1700,
+            "X": 4000,
+            "2": 4700
+        },
+        "both_teams_to_score": {
+            "yes": 1670,
+            "no": 2150
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1250,
+            "2X": 2200
+        }
+    },
+    {
+        "time": "2021-02-28T12:30:00Z",
+        "home_team": "1. FC Union Berlin",
+        "away_team": "TSG Hoffenheim",
+        "full_time_result": {
+            "1": 2400,
+            "X": 3400,
+            "2": 2900
+        },
+        "both_teams_to_score": {
+            "yes": 1570,
+            "no": 2330
+        },
+        "double_chance": {
+            "1X": 1420,
+            "12": 1330,
+            "2X": 1580
+        }
+    },
+    {
+        "time": "2021-02-28T14:30:00Z",
+        "home_team": "Mainz 05",
+        "away_team": "FC Augsburg",
+        "full_time_result": {
+            "1": 2100,
+            "X": 3500,
+            "2": 3400
+        },
+        "both_teams_to_score": {
+            "yes": 1750,
+            "no": 2040
+        },
+        "double_chance": {
+            "1X": 1330,
+            "12": 1320,
+            "2X": 1750
+        }
+    },
+    {
+        "time": "2021-02-28T17:00:00Z",
+        "home_team": "Bayer Leverkusen",
+        "away_team": "SC Freiburg",
+        "full_time_result": {
+            "1": 1740,
+            "X": 3750,
+            "2": 4700
+        },
+        "both_teams_to_score": {
+            "yes": 1550,
+            "no": 2380
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1280,
+            "2X": 2120
+        }
+    },
+    {
+        "time": "2021-03-05T19:30:00Z",
+        "home_team": "FC Schalke 04",
+        "away_team": "Mainz 05",
+        "full_time_result": {
+            "1": 3100,
+            "X": 3400,
+            "2": 2280
+        },
+        "both_teams_to_score": {
+            "yes": 1650,
+            "no": 2170
+        },
+        "double_chance": {
+            "1X": 1630,
+            "12": 1320,
+            "2X": 1370
+        }
+    },
+    {
+        "time": "2021-03-06T14:30:00Z",
+        "home_team": "Hertha BSC",
+        "away_team": "FC Augsburg",
+        "full_time_result": {
+            "1": 2150,
+            "X": 3400,
+            "2": 3400
+        },
+        "both_teams_to_score": {
+            "yes": 1720,
+            "no": 2070
+        },
+        "double_chance": {
+            "1X": 1320,
+            "12": 1300,
+            "2X": 1710
+        }
+    },
+    {
+        "time": "2021-03-06T14:30:00Z",
+        "home_team": "Eintracht Frankfurt",
+        "away_team": "VfB Stuttgart",
+        "full_time_result": {
+            "1": 1930,
+            "X": 3700,
+            "2": 3750
+        },
+        "both_teams_to_score": {
+            "yes": 1450,
+            "no": 2630
+        },
+        "double_chance": {
+            "1X": 1270,
+            "12": 1270,
+            "2X": 1880
+        }
+    },
+    {
+        "time": "2021-03-06T14:30:00Z",
+        "home_team": "Borussia M\u00f6nchengladbach",
+        "away_team": "Bayer Leverkusen",
+        "full_time_result": {
+            "1": 2550,
+            "X": 3300,
+            "2": 2800
+        },
+        "both_teams_to_score": {
+            "yes": 1430,
+            "no": 2750
+        },
+        "double_chance": {
+            "1X": 1440,
+            "12": 1330,
+            "2X": 1500
+        }
+    },
+    {
+        "time": "2021-03-06T14:30:00Z",
+        "home_team": "SC Freiburg",
+        "away_team": "RB Leipzig",
+        "full_time_result": {
+            "1": 4350,
+            "X": 3950,
+            "2": 1750
+        },
+        "both_teams_to_score": {
+            "yes": 1570,
+            "no": 2330
+        },
+        "double_chance": {
+            "1X": 2080,
+            "12": 1250,
+            "2X": 1210
+        }
+    },
+    {
+        "time": "2021-03-06T14:30:00Z",
+        "home_team": "TSG Hoffenheim",
+        "away_team": "VfL Wolfsburg",
+        "full_time_result": {
+            "1": 3000,
+            "X": 3550,
+            "2": 2300
+        },
+        "both_teams_to_score": {
+            "yes": 1440,
+            "no": 2700
+        },
+        "double_chance": {
+            "1X": 1620,
+            "12": 1300,
+            "2X": 1380
+        }
+    },
+    {
+        "time": "2021-03-06T17:30:00Z",
+        "home_team": "Bayern Munich",
+        "away_team": "Borussia Dortmund",
+        "full_time_result": {
+            "1": 1700,
+            "X": 4100,
+            "2": 4500
+        },
+        "both_teams_to_score": {
+            "yes": 1360,
+            "no": 3000
+        },
+        "double_chance": {
+            "1X": 1200,
+            "12": 1230,
+            "2X": 2160
+        }
+    },
+    {
+        "time": "2021-03-07T14:30:00Z",
+        "home_team": "1. FC K\u00f6ln",
+        "away_team": "Werder Bremen",
+        "full_time_result": {
+            "1": 2550,
+            "X": 3300,
+            "2": 2800
+        },
+        "both_teams_to_score": {
+            "yes": 1810,
+            "no": 1940
+        },
+        "double_chance": {
+            "1X": 1440,
+            "12": 1330,
+            "2X": 1500
+        }
+    },
+    {
+        "time": "2021-03-07T17:00:00Z",
+        "home_team": "Arminia Bielefeld",
+        "away_team": "1. FC Union Berlin",
+        "full_time_result": {
+            "1": 3700,
+            "X": 3300,
+            "2": 2100
+        },
+        "both_teams_to_score": {
+            "yes": 1850,
+            "no": 1900
+        },
+        "double_chance": {
+            "1X": 1740,
+            "12": 1340,
+            "2X": 1280
+        }
+    }
+]

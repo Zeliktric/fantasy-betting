@@ -1,509 +1,489 @@
 {
     "count": 10,
     "filters": {
-      "matchday": "25"
+        "matchday": "27"
     },
     "competition": {
-      "id": 2015,
-      "area": {
-        "id": 2081,
-        "name": "France"
-      },
-      "name": "Ligue 1",
-      "code": "FL1",
-      "plan": "TIER_ONE",
-      "lastUpdated": "2021-02-08T02:35:09Z"
+        "id": 2015,
+        "area": {
+            "id": 2081,
+            "name": "France"
+        },
+        "name": "Ligue 1",
+        "code": "FL1",
+        "plan": "TIER_ONE",
+        "lastUpdated": "2021-02-22T09:55:04Z"
     },
     "matches": [
-      {
-        "id": 297091,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
+        {
+            "id": 297113,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-26T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:00Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 529,
+                "name": "Stade Rennais FC 1901"
+            },
+            "awayTeam": {
+                "id": 522,
+                "name": "OGC Nice"
+            },
+            "referees": []
         },
-        "utcDate": "2021-02-13T16:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 1.15,
-          "draw": 8.09,
-          "awayWin": 15.5
+        {
+            "id": 297112,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-27T12:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:00Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 526,
+                "name": "FC Girondins de Bordeaux"
+            },
+            "awayTeam": {
+                "id": 545,
+                "name": "FC Metz"
+            },
+            "referees": []
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        {
+            "id": 297119,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-27T16:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:00Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 528,
+                "name": "Dijon Football C\u00f4te d'Or"
+            },
+            "awayTeam": {
+                "id": 524,
+                "name": "Paris Saint-Germain FC"
+            },
+            "referees": []
         },
-        "homeTeam": {
-          "id": 524,
-          "name": "Paris Saint-Germain FC"
+        {
+            "id": 297118,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T12:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 548,
+                "name": "AS Monaco FC"
+            },
+            "awayTeam": {
+                "id": 512,
+                "name": "Stade Brestois 29"
+            },
+            "referees": []
         },
-        "awayTeam": {
-          "id": 522,
-          "name": "OGC Nice"
+        {
+            "id": 297115,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T14:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 525,
+                "name": "FC Lorient"
+            },
+            "awayTeam": {
+                "id": 527,
+                "name": "AS Saint-\u00c9tienne"
+            },
+            "referees": []
         },
-        "referees": []
-      },
-      {
-        "id": 297096,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
+        {
+            "id": 297116,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T14:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 547,
+                "name": "Stade de Reims"
+            },
+            "awayTeam": {
+                "id": 518,
+                "name": "Montpellier HSC"
+            },
+            "referees": []
         },
-        "utcDate": "2021-02-13T18:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 2.9,
-          "draw": 2.92,
-          "awayWin": 2.71
+        {
+            "id": 297117,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T14:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 532,
+                "name": "Angers SCO"
+            },
+            "awayTeam": {
+                "id": 546,
+                "name": "Racing Club de Lens"
+            },
+            "referees": []
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        {
+            "id": 297120,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T14:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 556,
+                "name": "N\u00eemes Olympique"
+            },
+            "awayTeam": {
+                "id": 543,
+                "name": "FC Nantes"
+            },
+            "referees": []
         },
-        "homeTeam": {
-          "id": 547,
-          "name": "Stade de Reims"
+        {
+            "id": 297111,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T16:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 521,
+                "name": "Lille OSC"
+            },
+            "awayTeam": {
+                "id": 576,
+                "name": "RC Strasbourg Alsace"
+            },
+            "referees": []
         },
-        "awayTeam": {
-          "id": 546,
-          "name": "Racing Club de Lens"
-        },
-        "referees": []
-      },
-      {
-        "id": 297093,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-13T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 1.39,
-          "draw": 5.06,
-          "awayWin": 7.07
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 523,
-          "name": "Olympique Lyonnais"
-        },
-        "awayTeam": {
-          "id": 518,
-          "name": "Montpellier HSC"
-        },
-        "referees": []
-      },
-      {
-        "id": 297098,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T12:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 1.4,
-          "draw": 4.99,
-          "awayWin": 6.98
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 548,
-          "name": "AS Monaco FC"
-        },
-        "awayTeam": {
-          "id": 525,
-          "name": "FC Lorient"
-        },
-        "referees": []
-      },
-      {
-        "id": 297095,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T14:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 1.85,
-          "draw": 3.65,
-          "awayWin": 4.15
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 529,
-          "name": "Stade Rennais FC 1901"
-        },
-        "awayTeam": {
-          "id": 527,
-          "name": "AS Saint-\u00c9tienne"
-        },
-        "referees": []
-      },
-      {
-        "id": 297097,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T14:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 2.19,
-          "draw": 2.98,
-          "awayWin": 3.8
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 532,
-          "name": "Angers SCO"
-        },
-        "awayTeam": {
-          "id": 543,
-          "name": "FC Nantes"
-        },
-        "referees": []
-      },
-      {
-        "id": 297099,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T14:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 2.21,
-          "draw": 3.45,
-          "awayWin": 3.18
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 528,
-          "name": "Dijon Football C\u00f4te d'Or"
-        },
-        "awayTeam": {
-          "id": 556,
-          "name": "N\u00eemes Olympique"
-        },
-        "referees": []
-      },
-      {
-        "id": 297100,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T14:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 3.11,
-          "draw": 2.89,
-          "awayWin": 2.57
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 545,
-          "name": "FC Metz"
-        },
-        "awayTeam": {
-          "id": 576,
-          "name": "RC Strasbourg Alsace"
-        },
-        "referees": []
-      },
-      {
-        "id": 297092,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T16:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 1.52,
-          "draw": 4.24,
-          "awayWin": 6.05
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 521,
-          "name": "Lille OSC"
-        },
-        "awayTeam": {
-          "id": 512,
-          "name": "Stade Brestois 29"
-        },
-        "referees": []
-      },
-      {
-        "id": 297094,
-        "season": {
-          "id": 596,
-          "startDate": "2020-08-22",
-          "endDate": "2021-05-23",
-          "currentMatchday": 24
-        },
-        "utcDate": "2021-02-14T20:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 25,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-02-07T07:33:52Z",
-        "odds": {
-          "homeWin": 2.73,
-          "draw": 3.22,
-          "awayWin": 2.64
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 526,
-          "name": "FC Girondins de Bordeaux"
-        },
-        "awayTeam": {
-          "id": 516,
-          "name": "Olympique de Marseille"
-        },
-        "referees": []
-      }
+        {
+            "id": 297114,
+            "season": {
+                "id": 596,
+                "startDate": "2020-08-22",
+                "endDate": "2021-05-23",
+                "currentMatchday": 26
+            },
+            "utcDate": "2021-02-28T20:00:00Z",
+            "status": "SCHEDULED",
+            "matchday": 27,
+            "stage": "REGULAR_SEASON",
+            "group": "Regular Season",
+            "lastUpdated": "2021-02-11T10:34:01Z",
+            "odds": {
+                "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+            },
+            "score": {
+                "winner": null,
+                "duration": "REGULAR",
+                "fullTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "halfTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "extraTime": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                },
+                "penalties": {
+                    "homeTeam": null,
+                    "awayTeam": null
+                }
+            },
+            "homeTeam": {
+                "id": 516,
+                "name": "Olympique de Marseille"
+            },
+            "awayTeam": {
+                "id": 523,
+                "name": "Olympique Lyonnais"
+            },
+            "referees": []
+        }
     ]
-  }
+}

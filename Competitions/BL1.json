@@ -1,460 +1,442 @@
 {
-    "count": 9,
-    "filters": {
-      "matchday": "21"
+  "count": 9,
+  "filters": {
+    "matchday": "23"
+  },
+  "competition": {
+    "id": 2002,
+    "area": {
+      "id": 2088,
+      "name": "Germany"
     },
-    "competition": {
-      "id": 2002,
-      "area": {
-        "id": 2088,
-        "name": "Germany"
+    "name": "Bundesliga",
+    "code": "BL1",
+    "plan": "TIER_ONE",
+    "lastUpdated": "2021-02-22T02:40:07Z"
+  },
+  "matches": [
+    {
+      "id": 303202,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
       },
-      "name": "Bundesliga",
-      "code": "BL1",
-      "plan": "TIER_ONE",
-      "lastUpdated": "2021-02-07T21:20:51Z"
+      "utcDate": "2021-02-26T19:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:36Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 12,
+        "name": "SV Werder Bremen"
+      },
+      "awayTeam": {
+        "id": 19,
+        "name": "Eintracht Frankfurt"
+      },
+      "referees": []
     },
-    "matches": [
-      {
-        "id": 303190,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-12T19:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 1.21,
-          "draw": 6.58,
-          "awayWin": 12.29
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 721,
-          "name": "RB Leipzig"
-        },
-        "awayTeam": {
-          "id": 16,
-          "name": "FC Augsburg"
-        },
-        "referees": []
+    {
+      "id": 303200,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
       },
-      {
-        "id": 303183,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-13T14:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 1.45,
-          "draw": 4.81,
-          "awayWin": 6.11
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 4,
-          "name": "Borussia Dortmund"
-        },
-        "awayTeam": {
-          "id": 2,
-          "name": "TSG 1899 Hoffenheim"
-        },
-        "referees": []
+      "utcDate": "2021-02-27T14:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:36Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      {
-        "id": 303184,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "utcDate": "2021-02-13T14:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 2.0,
-          "draw": 3.87,
-          "awayWin": 3.35
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "homeTeam": {
-          "id": 10,
-          "name": "VfB Stuttgart"
-        },
-        "awayTeam": {
-          "id": 9,
-          "name": "Hertha BSC"
-        },
-        "referees": []
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
       },
-      {
-        "id": 303185,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-13T14:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 2.46,
-          "draw": 3.37,
-          "awayWin": 2.83
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 12,
-          "name": "SV Werder Bremen"
-        },
-        "awayTeam": {
-          "id": 17,
-          "name": "SC Freiburg"
-        },
-        "referees": []
+      "homeTeam": {
+        "id": 4,
+        "name": "Borussia Dortmund"
       },
-      {
-        "id": 303187,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-13T14:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 1.36,
-          "draw": 5.58,
-          "awayWin": 7.37
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 3,
-          "name": "Bayer 04 Leverkusen"
-        },
-        "awayTeam": {
-          "id": 15,
-          "name": "1. FSV Mainz 05"
-        },
-        "referees": []
+      "awayTeam": {
+        "id": 38,
+        "name": "Arminia Bielefeld"
       },
-      {
-        "id": 303189,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-13T17:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 1.75,
-          "draw": 3.72,
-          "awayWin": 4.48
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 28,
-          "name": "1. FC Union Berlin"
-        },
-        "awayTeam": {
-          "id": 6,
-          "name": "FC Schalke 04"
-        },
-        "referees": []
+      "referees": []
+    },
+    {
+      "id": 303201,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
       },
-      {
-        "id": 303182,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
-        },
-        "utcDate": "2021-02-14T14:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 1.61,
-          "draw": 4.18,
-          "awayWin": 5.06
-        },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
-        },
-        "homeTeam": {
-          "id": 19,
-          "name": "Eintracht Frankfurt"
-        },
-        "awayTeam": {
-          "id": 1,
-          "name": "1. FC K\u00f6ln"
-        },
-        "referees": []
+      "utcDate": "2021-02-27T14:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:36Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      {
-        "id": 303188,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "utcDate": "2021-02-14T17:00:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:35Z",
-        "odds": {
-          "homeWin": 2.46,
-          "draw": 3.41,
-          "awayWin": 2.79
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "homeTeam": {
-          "id": 11,
-          "name": "VfL Wolfsburg"
-        },
-        "awayTeam": {
-          "id": 18,
-          "name": "Borussia M\u00f6nchengladbach"
-        },
-        "referees": []
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
       },
-      {
-        "id": 303186,
-        "season": {
-          "id": 599,
-          "startDate": "2020-09-18",
-          "endDate": "2021-05-15",
-          "currentMatchday": 20
+      "homeTeam": {
+        "id": 10,
+        "name": "VfB Stuttgart"
+      },
+      "awayTeam": {
+        "id": 6,
+        "name": "FC Schalke 04"
+      },
+      "referees": []
+    },
+    {
+      "id": 303203,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-27T14:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:36Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "utcDate": "2021-02-15T19:30:00Z",
-        "status": "SCHEDULED",
-        "matchday": 21,
-        "stage": "REGULAR_SEASON",
-        "group": "Regular Season",
-        "lastUpdated": "2021-01-07T13:30:36Z",
-        "odds": {
-          "homeWin": 1.13,
-          "draw": 9.32,
-          "awayWin": 16.29
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "score": {
-          "winner": null,
-          "duration": "REGULAR",
-          "fullTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "halfTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "extraTime": {
-            "homeTeam": null,
-            "awayTeam": null
-          },
-          "penalties": {
-            "homeTeam": null,
-            "awayTeam": null
-          }
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "homeTeam": {
-          "id": 5,
-          "name": "FC Bayern M\u00fcnchen"
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 5,
+        "name": "FC Bayern M\u00fcnchen"
+      },
+      "awayTeam": {
+        "id": 1,
+        "name": "1. FC K\u00f6ln"
+      },
+      "referees": []
+    },
+    {
+      "id": 303205,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-27T14:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:37Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "awayTeam": {
-          "id": 38,
-          "name": "DSC Arminia Bielefeld"
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
         },
-        "referees": []
-      }
-    ]
-  }
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 11,
+        "name": "VfL Wolfsburg"
+      },
+      "awayTeam": {
+        "id": 9,
+        "name": "Hertha BSC"
+      },
+      "referees": []
+    },
+    {
+      "id": 303208,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-27T17:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:37Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 721,
+        "name": "RB Leipzig"
+      },
+      "awayTeam": {
+        "id": 18,
+        "name": "Borussia M\u00f6nchengladbach"
+      },
+      "referees": []
+    },
+    {
+      "id": 303207,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-28T12:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:37Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 28,
+        "name": "1. FC Union Berlin"
+      },
+      "awayTeam": {
+        "id": 2,
+        "name": "TSG 1899 Hoffenheim"
+      },
+      "referees": []
+    },
+    {
+      "id": 303206,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-28T14:30:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:37Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 15,
+        "name": "1. FSV Mainz 05"
+      },
+      "awayTeam": {
+        "id": 16,
+        "name": "FC Augsburg"
+      },
+      "referees": []
+    },
+    {
+      "id": 303204,
+      "season": {
+        "id": 599,
+        "startDate": "2020-09-18",
+        "endDate": "2021-05-15",
+        "currentMatchday": 22
+      },
+      "utcDate": "2021-02-28T17:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 23,
+      "stage": "REGULAR_SEASON",
+      "group": "Regular Season",
+      "lastUpdated": "2021-01-07T13:30:37Z",
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "halfTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "extraTime": {
+          "homeTeam": null,
+          "awayTeam": null
+        },
+        "penalties": {
+          "homeTeam": null,
+          "awayTeam": null
+        }
+      },
+      "homeTeam": {
+        "id": 3,
+        "name": "Bayer 04 Leverkusen"
+      },
+      "awayTeam": {
+        "id": 17,
+        "name": "SC Freiburg"
+      },
+      "referees": []
+    }
+  ]
+}

@@ -93,6 +93,7 @@ class BetHistory(models.Model):
     u_id = models.BigIntegerField(verbose_name="Discord id of the user")
     amount = models.IntegerField(verbose_name="Amount of money that was betted", default=0)
     team = models.CharField(max_length=100, verbose_name="Team name", default=None)
+    score = models.CharField(max_length=10, verbose_name="The Score", default=None)
     profit = models.IntegerField(verbose_name="Amount of profit/loss recieved", default=0)
     odds = models.CharField(max_length=10, verbose_name="Odds for the bet", default=None)
     code = models.CharField(max_length=5, verbose_name="League code of bet", default=None)

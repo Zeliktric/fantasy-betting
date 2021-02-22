@@ -32,6 +32,8 @@ class Listener(ICog):
         self.role_lock = asyncio.Lock()
         self.time = None
 
+
+
     @Cog.listener()
     async def on_command(self, ctx: Context):
         if ctx.author.id == self.bot.user.id:
