@@ -144,7 +144,7 @@ class Game(ICog):
             gw = (response["filters"]["matchday"])
             gw = int(gw) + 1
             connection = http.client.HTTPConnection('api.football-data.org')
-            headers = { 'X-Auth-Token': '41d2d4c794c94335a714092965523d5c' }
+            headers = { 'X-Auth-Token': '' }
             connection.request('GET', f'/v2/competitions/{code}/matches?matchday={gw}', None, headers )
             response = json.loads(connection.getresponse().read().decode())
             with open(f"Competitions/{code}.json", "w") as f:
