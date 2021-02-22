@@ -1,6 +1,7 @@
 # Fantasy Betting Bot
 
 Fantasy Betting bot for the Football Discord server.
+https://discord.gg/football
 
 ## Info
 This bot allows you to bet using virtual currency on real-time football matches in any of the top 5 leagues in Europe!
