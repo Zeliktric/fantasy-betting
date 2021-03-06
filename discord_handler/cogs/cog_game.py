@@ -5,6 +5,8 @@ from discord_handler.base.cog_interface import ICog, AuthorState
 from db.models import DBUser, BetHistory
 import discord
 
+import random
+
 from discord.utils import get
 from datetime import datetime, timedelta
 from asyncio import sleep as s
@@ -41,7 +43,7 @@ class Game(ICog):
       lst = ["PL", "FL1", "PD", "PL", "SA"]
       while True:
         for code in lst:
-          with open(f"Competitions/{code}.json", "r") as f:
+          with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code}.json", "r") as f:
             response = json.load(f)
           for r in range(10):
             if r == 9:
@@ -58,9 +60,9 @@ class Game(ICog):
             headers = { 'X-Auth-Token': '41d2d4c794c94335a714092965523d5c' }
             connection.request('GET', f'/v2/competitions/{code}/matches?matchday={gw}', None, headers )
             response = json.loads(connection.getresponse().read().decode())
-            with open(f"Competitions/{code}.json", "w") as f:
+            with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code}.json", "w") as f:
               json.dump(response, f, indent=4)
-            with open(f"Bets/{code}.json", "r") as f:
+            with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code}.json", "r") as f:
               data = json.load(f)
             
             for x, y in data.items():
@@ -72,7 +74,7 @@ class Game(ICog):
               potentialp = y[2]
               betodd = y[3]
               pb = ""
-              with open(f"Competitions/{code}.json", "r") as f:
+              with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code}.json", "r") as f:
                 data = json.load(f)
               for r in range(10):
                 ht = data["matches"][r]["homeTeam"]["name"]
@@ -135,10 +137,10 @@ class Game(ICog):
                 code=code,
                 timestamp=timezone.now()
               ).save()
-              with open(f"Bets/{code}.json", "r") as f:
+              with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code}.json", "r") as f:
                 data = json.load(f)
               data.pop(str(user.id))
-              with open(f"Bets/{code.upper()}.json", "w") as f:
+              with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "w") as f:
                 json.dump(data, f, indent=4)
 
             gw = (response["filters"]["matchday"])
@@ -147,7 +149,7 @@ class Game(ICog):
             headers = { 'X-Auth-Token': '' }
             connection.request('GET', f'/v2/competitions/{code}/matches?matchday={gw}', None, headers )
             response = json.loads(connection.getresponse().read().decode())
-            with open(f"Competitions/{code}.json", "w") as f:
+            with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code}.json", "w") as f:
               json.dump(response, f, indent=4)
             api = ApiUnibet()
             urls = {
@@ -159,7 +161,7 @@ class Game(ICog):
               }
             url = urls.get(code.upper())
             odds = api.odds(url)
-            with open(f"Odds/{code}.json", "w") as f:
+            with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Odds/{code}.json", "w") as f:
               json.dump(odds, f, indent=4)
             channel = bot.get_channel(808769018546094103)
             await channel.send(f"Updated {code} | {datetime.utcnow()}")
@@ -174,7 +176,25 @@ class Game(ICog):
 
 
 
-
+    @command(
+        name="daily",
+        brief="Collect your daily money",
+        help="Gives you a random amount of money for your daily amount."
+    )
+    @commands.cooldown(
+      1,
+      86400,
+      commands.BucketType.user
+    )
+    async def daily(self, ctx: Context):
+        obj = DBUser.objects.get(g_id=ctx.message.guild.id, u_id=ctx.message.author.id)
+        field_object = DBUser._meta.get_field("u_bal")
+        u_bal = field_object.value_from_object(obj)
+        money = random.randint(10, 100)
+        pm = int(u_bal) + money
+        obj.u_bal = pm
+        obj.save()
+        await ctx.send(f"Successfully added {money} to {ctx.message.author}! They now have {pm}.")
 
 
     @command(
@@ -255,9 +275,52 @@ Real Betis Balompié
 Cádiz CF
 Athletic Club
         """
-      else:
-        with open(f"Competitions/{code.upper()}.txt", "r") as f:
-          l = f.read()
+      elif name == "Premier League":
+        l = """
+Burnley FC
+Arsenal FC
+Sheffield United FC
+Southampton FC
+Aston Villa FC
+Wolverhampton Wanderers FC
+Brighton & Hove Albion FC
+Leicester City FC
+West Bromwich Albion FC
+Newcastle United FC
+Liverpool FC
+Fulham FC
+Manchester City FC
+Manchester United FC
+Tottenham Hotspur FC
+Crystal Palace FC
+Chelsea FC
+Everton FC
+West Ham United FC
+Leeds United FC
+      """
+      elif name == "Serie A":
+        l = """
+Spezia Calcio
+Benevento Calcio
+Udinese Calcio
+US Sassuolo Calcio
+Juventus FC
+SS Lazio
+AS Roma
+Genoa CFC
+ACF Fiorentina
+Parma Calcio 1913
+Hellas Verona FC
+AC Milan
+FC Crotone
+Torino FC
+UC Sampdoria
+Cagliari Calcio
+SSC Napoli
+Bologna FC 1909
+FC Internazionale Milano
+Atalanta BC
+      """
       listt = l.split("\n")
       fi = False
       tt = []
@@ -385,7 +448,7 @@ Athletic Club
 #           text = "Fantasy Betting Bot"
 #         )
 #         return await ctx.send(content=ctx.message.author.mention, embed=embed)
-#       with open(f"Competitions/{code.upper()}.txt", "r") as f:
+#       with open(f"/home/zeliktric/DiscordBots/fantasy-betting-private/Competitions/{code.upper()}.txt", "r") as f:
 #         t = f.read()
 #       teams = []
 #       t = t.split("\n")
@@ -411,7 +474,7 @@ Athletic Club
     )
     @commands.cooldown(
       1,
-      300,
+      120,
       commands.BucketType.user
     )
     async def bet(self, ctx: Context):
@@ -423,7 +486,7 @@ Athletic Club
 
       n = {"Bundesliga": "BL1", "France Ligue 1": "FL1", "La Liga": "PD", "Premier League": "PL", "Serie A": "SA"}
       code = n.get(league)
-      with open(f"Competitions/{code.upper()}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code.upper()}.json", "r") as f:
         response = json.load(f)
 
 
@@ -482,7 +545,7 @@ Athletic Club
       if fi == False:
         return await channel.send(f"I could not find a team in the `{league}` with the team name of `{team}`!")
 
-      with open(f"Odds/{code}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Odds/{code}.json", "r") as f:
         odds = json.load(f)
 
       hwin = round(odds[r]["full_time_result"]["1"]/1000, 2)
@@ -536,12 +599,12 @@ Betting odds: `1/{odd}`
       )
       r = await yes_no("", channel, embed=embed)
       if r:
-        with open(f"Bets/{code.upper()}.json", "r") as f:
+        with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "r") as f:
           data = json.load(f)
         nnn = data.get(str(ctx.message.author.id))
         if nnn == None:
           data[str(ctx.message.author.id)] = [bet, teamm, wins, odd]
-          with open(f"Bets/{code.upper()}.json", "w") as f:
+          with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "w") as f:
             json.dump(data, f, indent=4)
           await channel.send(f"Bet successfully placed!")
           self.u.u_bal = u_bal - bet
@@ -558,7 +621,7 @@ Betting odds: `1/{odd}`
     #   lst = ["BL1", "FL1", "PD", "PL", "SA"]
     #   if code.upper() not in lst:
     #     return await ctx.send(f"`{code}` is an invalid league code! Use `*leagues` to get them!")
-    #   with open(f"Competitions/{code.upper()}.json", "r") as f:
+    #   with open(f"/home/zeliktric/DiscordBots/fantasy-betting-private/Competitions/{code.upper()}.json", "r") as f:
     #     response = json.load(f)
     #   m = []
     #   n = {"BL1": "Bundesliga", "FL1": "France Ligue 1", "PD": "La Liga", "PL": "Premier League", "SA": "Serie A"}
@@ -639,12 +702,12 @@ Betting odds: `1/{odd}`
     #       await msgg.delete()
     #       return await ctx.send("Process cancelled.", delete_after=5)
     #     else:
-    #       with open(f"Bets/{code.upper()}.json", "r") as f:
+    #       with open(f"/home/zeliktric/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "r") as f:
     #         data = json.load(f)
     #       nnn = data.get(str(ctx.message.author.id))
     #       if nnn == None:
     #         data[str(ctx.message.author.id)] = [bet, teamm, wins, odd]
-    #         with open(f"Bets/{code.upper()}.json", "w") as f:
+    #         with open(f"/home/zeliktric/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "w") as f:
     #           json.dump(data, f, indent=4)
     #         await ctx.send(f"{ctx.message.author.mention}\nBet successfully placed!")
     #         await s(4.5)
@@ -670,7 +733,7 @@ Betting odds: `1/{odd}`
       lst = ["BL1", "FL1", "PD", "PL", "SA"]
       if code.upper() not in lst:
         return await ctx.send(f"`{code}` is an invalid league code! Use `*leagues` to get them!")
-      with open(f"Bets/{code.upper()}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "r") as f:
         data = json.load(f)
       nnn = data.get(str(ctx.message.author.id))
       n = {"BL1": "Bundesliga", "FL1": "France Ligue 1", "PD": "La Liga", "PL": "Premier League", "SA": "Serie A"}
@@ -715,7 +778,7 @@ Betting odds: `1/{betodds}`
         self.u.u_bal = int(u_bal) + int(betamount)
         self.u.save()
         data.pop(str(ctx.message.author.id))
-        with open(f"Bets/{code.upper()}.json", "w") as f:
+        with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{code.upper()}.json", "w") as f:
           json.dump(data, f, indent=4)
         await ctx.send(f"{ctx.message.author.mention}\nBet successfully deleted!")
         await s(4.5)
@@ -731,7 +794,7 @@ Betting odds: `1/{betodds}`
       x = []
       lst = ["BL1", "FL1", "PD", "PL", "SA"]
       for each in lst:
-        with open(f"Bets/{each}.json", "r") as f:
+        with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Bets/{each}.json", "r") as f:
           data = json.load(f)
         thedata = data.get(str(ctx.message.author.id))
         if thedata == None:
@@ -771,7 +834,7 @@ Betting odds: `1/{betodds}`
       lst = ["BL1", "FL1", "PD", "PL", "SA"]
       if code.upper() not in lst:
         return await ctx.send(f"`{code}` is an invalid league code! Use `*leagues` to get them!")
-      with open(f"Competitions/{code.upper()}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code.upper()}.json", "r") as f:
         response = json.load(f)
       m = []
       n = {"BL1": "Bundesliga", "FL1": "France Ligue 1", "PD": "La Liga", "PL": "Premier League", "SA": "Serie A"}
@@ -796,7 +859,7 @@ Betting odds: `1/{betodds}`
           pass
       if fi == False:
         return await ctx.send(f"I could not find a team in the `{code}` with the team name of `{team}`!")
-      with open(f"Odds/{code}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Odds/{code}.json", "r") as f:
         odds = json.load(f)
 
       hwin = round(odds[r]["full_time_result"]["1"]/1000, 2)
@@ -805,12 +868,10 @@ Betting odds: `1/{betodds}`
       e = f"""
       __**Teams**__
 **{hteam} VS {ateam}**
-
 __**Odds**__
 {hteam} win: 1/**{hwin}**
 {ateam} win: 1/**{awin}**
 Draw: 1/**{draw}**
-
       """
       embed = discord.Embed(
         title = f"{hteam} VS {ateam}",
@@ -833,7 +894,7 @@ Draw: 1/**{draw}**
       lst = ["BL1", "FL1", "PD", "PL", "SA"]
       if code.upper() not in lst:
         return await ctx.send(f"`{code}` is an invalid league code! Use `*leagues` to get them!")
-      with open(f"Competitions/{code.upper()}.json", "r") as f:
+      with open(f"/home/zeli/DiscordBots/fantasy-betting-private/Competitions/{code.upper()}.json", "r") as f:
         response = json.load(f)
       m = []
       n = {"BL1": "Bundesliga", "FL1": "France Ligue 1", "PD": "La Liga", "PL": "Premier League", "SA": "Serie A"}
@@ -865,15 +926,7 @@ Draw: 1/**{draw}**
       embed.set_footer(
         text = "Fantasy Betting Bot"
       )
-      try:
-        f = os.path.abspath(f"C:/Users/Admin/Pictures/zbp/{code.upper()}.png")
-        file = discord.File(f, filename=f)
-        embed.set_thumbnail(url=f"attachment://{code.upper()}.png")
-      except:
-        f = os.path.abspath(f"C:/Users/Admin/Pictures/zbp/{code.upper()}.jpg")
-        file = discord.File(f, filename=f)
-        embed.set_thumbnail(url=f"attachment://{code.upper()}.jpg")
-      await ctx.send(content=ctx.message.author.mention, embed=embed, file=file)
+      await ctx.send(content=ctx.message.author.mention, embed=embed)
 
     @command(
       name="leagues",
@@ -989,7 +1042,7 @@ Final Score: `{score}`
 
         if upl < 0:
           pol = "Loss"
-          upl = upl.replace("-", "")
+          upl = str(upl).replace("-", "")
         else:
           pol = "Profit"
 
@@ -1009,4 +1062,3 @@ Final Score: `{score}`
 def setup(bot):
     bot.loop.create_task(Game.update(bot))
     bot.add_cog(Game(bot))
-
